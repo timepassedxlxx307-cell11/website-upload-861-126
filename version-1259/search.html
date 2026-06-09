@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片 - 韩国日本经典电影资源库</title>
+  <meta name="description" content="韩国日本经典电影资源库搜索页，可按片名、地区、年份、类型或标签查找影视内容。">
+  <meta name="keywords" content="韩国电影,日本电影,韩剧,日剧,免费在线观看,高清不卡顿,字幕同步,搜索影片,影视搜索">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="搜索影片 - 韩国日本经典电影资源库">
+  <meta property="og:description" content="韩国日本经典电影资源库搜索页，可按片名、地区、年份、类型或标签查找影视内容。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="韩日经典影库">
+      <span class="brand-icon">▶</span>
+      <span class="brand-copy">
+        <strong>韩日经典影库</strong>
+        <em>高清不卡顿</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="" href="./index.html">首页</a>
+      <a class="active" href="./categories.html">分类</a>
+      <a class="" href="./ranking.html">排行榜</a>
+      <a href="./category-01.html">片库精选一</a><a href="./category-02.html">片库精选二</a><a href="./category-03.html">片库精选三</a><a href="./category-04.html">片库精选四</a><a href="./category-05.html">片库精选五</a><a href="./category-06.html">片库精选六</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影视..." aria-label="搜索影视">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>☰</button>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+    <form action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影视..." aria-label="搜索影视">
+      <button type="submit">搜索</button>
+    </form>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./ranking.html">排行榜</a>
+    <a href="./category-01.html">片库精选一</a><a href="./category-02.html">片库精选二</a><a href="./category-03.html">片库精选三</a><a href="./category-04.html">片库精选四</a><a href="./category-05.html">片库精选五</a><a href="./category-06.html">片库精选六</a>
+  </div>
+</header>
+
+<main class="main-shell">
+  <section class="page-header">
+    <div>
+      <span class="page-kicker">Search</span>
+      <h1>搜索影片</h1>
+      <p>输入片名、地区、年份、类型或标签，快速浏览韩国电影、日本电影、韩剧、日剧与更多影视内容。</p>
+    </div>
+  </section>
+  <section class="search-panel">
+    <form action="./search.html" method="get">
+      <input type="search" name="q" data-search-page-input placeholder="搜索片名、类型、地区或标签" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="movie-grid" data-search-results></section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section class="footer-brand">
+      <div class="footer-logo"><span>▶</span><strong>韩日经典影库</strong></div>
+      <p>韩国日本经典电影资源库：免费在线观看、高码率高清不卡顿与字幕同步观看体验攻略</p>
+    </section>
+    <section>
+      <h2>快速导航</h2>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./categories.html">分类浏览</a></li>
+        <li><a href="./ranking.html">排行榜</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>精选片库</h2>
+      <ul><li><a href="./category-01.html">片库精选一</a></li><li><a href="./category-02.html">片库精选二</a></li><li><a href="./category-03.html">片库精选三</a></li><li><a href="./category-04.html">片库精选四</a></li><li><a href="./category-05.html">片库精选五</a></li><li><a href="./category-06.html">片库精选六</a></li></ul>
+    </section>
+    <section>
+      <h2>热门类型</h2>
+      <ul>
+        <li><a href="./search.html?q=韩国电影">韩国电影</a></li>
+        <li><a href="./search.html?q=日本电影">日本电影</a></li>
+        <li><a href="./search.html?q=韩剧">韩剧</a></li>
+        <li><a href="./search.html?q=日剧">日剧</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">© 2026 韩日经典影库 · 高清不卡顿</div>
+</footer>
+<script src="./assets/js/site.js"></script>
+<script src="./assets/js/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
